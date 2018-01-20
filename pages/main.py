@@ -8,9 +8,16 @@ import cherrypy
 # "pages" refers to the folder containing all the different files with
 # code for the various pages
 
-#from pages.home import HomePage
 #from pages.search import SearchPage
+#from pages.list import ListingsPage
 #etc
+
+class HomePage:
+
+    @cherrypy.expose
+    def index(self):
+        return """ <h1> Welcome to Wecycle </h1>"""
+    
 
 if __name__ == '__main__':
     cherrypy.quickstart(HomePage())
