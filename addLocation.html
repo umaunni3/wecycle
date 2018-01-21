@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head id = "background">
+    <title> Add your location </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <div class="mySlides w3-display-container w3-center">
+          
+        </div>
+</head>
+
+<style>
+    #background {
+        background-color: #7CEAD0;  
+        margin: 200;
+        font-family: sans-serif
+    }
+    #daysoftheweekfont {
+        font-size: 12px;
+        margin-left: -220px;
+    }
+    
+</style>
+
+<body id = "background">
+    <p>Organizations, add your location here.</p>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a href="Wecycle.html" class="navbar-brand" img = "https://imgur.com/vCCJQ9V">Logo</a>
+            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a>FIND A RECYCLING CENTER NEAR YOU</a></li>
+                <li><a href="Wecycle.html#services">SERVICES</a></li>
+      
+                <li><a href="Wecycle.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>      
+    <div class="jumbotron text-center">
+        <h1>Wecycle</h1> 
+            <p> Add your location to our database! Simply fill out this form to add your location to our website so people can come to you to recycle. </p> 
+        <form style="margin-left:200px">
+            <div class="input-group" >
+                <p>Organization Name: </p>
+                <input class="form-control" size="50" required>
+            </div>
+            <p></p>
+            <div class="input-group">
+                <p> What are three major items that you collect. If you have too many spaces than write n/a: </p>
+                <p><label> 1. <input class="form-control" style="margin-right: 50px" size="40" required> </label></p>
+                <p><label> 2. <input class="form-control" style="margin-right: 50px" size="40" required> </label></p>
+                <p><label> 3. <input class="form-control" style="margin-right: 50px" size="40" required> </label></p>
+            </div>
+            <div class="input-group" style= "margin-left:00px" id="daysoftheweekfont">
+                <p style="margin-left:-500px"> Address: </p>
+                <p><label>Street Address <input class="form-control" size="50" required> </label></p>
+                <label>City <input class="form-control" size="30" required> </label>
+                <label>State <input class="form-control" size="4" required> </label>
+                <label>Zip Code <input class="form-control" size="20" required> </label>
+               
+            </div>
+            <div class="input-group" id = "daysoftheweekfont"> 
+                <p style="margin-left: -20px"> What days are you open? </p>
+                <label style="margin-left: 220px"><input type="checkbox" name="checkbox1">Sunday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox2">Monday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox3">Tuesday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox4">Wednesday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox5">Thursday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox6">Friday  </label>
+                <label style="margin-left: 10px"><input type="checkbox" name="checkbox7">Sunday  </label>
+            </div>
+            <div class="input-group" >
+                <p></p>
+                <p> What are your weekday hours? </p>
+                <input class="form-control" size="30" required>
+            </div>
+            <div class="input-group" >
+                <p></p>
+                <p> What are your Saturday hours? </p>
+                <input class="form-control" size="30" required>
+            </div>
+            <div class="input-group" >
+                <p></p>
+                <p> What are your Sunday hours? </p>
+                <input class="form-control" size="30" required>
+            </div>
+            <div class="input-group" >
+                <p></p>
+                <p> Phone Number: </p>
+                <input class="form-control" size="30" required>
+            </div>
+            <div class="input-group" >
+                <p></p>
+                <p> Email Address: </p>
+                <input class="form-control" size="40" required>
+            </div>
+            <p> <div class="input-group-btn" color = "black">
+                <button type="button" color = "black" class="btn btn-danger"> Submit! </button>
+            </div> </p>
+        </form>
+    </div> 
+    
+</body>
+
