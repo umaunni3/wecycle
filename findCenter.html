@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+	
+  <title>Wecycle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+
+
+<!––CSS work--->
+<style>
+
+.dropbtn {
+	margin: auto;
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /*margin-left: 200px;*/
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+
+
+button{
+width : 100px;
+height: 50px
+}
+body {background-color: #7DCEA0;}
+
+
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href=Wecycle.html><img src=https://i.imgur.com/GedqAzd.png height="50" width="55" ></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a>FIND A RECYCLING CENTER NEAR YOU</a></li>
+        <li><a href="Wecycle.html#services">SERVICES</a></li>
+      
+        <li><a href="Wecycle.html#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<title >  Recycle with us </title>
+	<button onclick="goBack()">Go Back</button>
+	<h1 style="font-family:verdana; text-align:center;"> Recycle with us</h1>
+
+
+<h2 style="font-family:verdana; text-align:center;">What would you like to recycle?</h2><br>
+
+	<div class="dropdown" style="margin-left: 350px">
+<button onclick="myFunction()" class="dropbtn">Items</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href=Batteries.html>Batteries</a>
+    <a href="#about">Paint</a>
+    <a href="#contact">Large Furniture</a>
+    <a href="#contact">Mercury-Containing Item</a>
+    <a href="#contact">Tires</a>
+  </div>
+</div>
+
+  </select>
+  
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
